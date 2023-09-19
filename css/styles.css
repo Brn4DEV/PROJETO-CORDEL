@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+:root {
+    --font1: Bungee;
+    --font2: cursive;
+    --font3: 'Courier New', Courier, monospace
+}
+
+html, body {
+    background-color: darkgrey;
+    min-height: 100vh;
+    font-family: var(--font1);
+}
+header {
+    background-color: rgb(11, 10, 10);
+    color: white;
+    text-align: center;
+}
+header > h1 {
+    font-size: 3.5vw;
+    font-variant: small-caps;
+    font-family: var(--font1);
+}
+header > p {    
+    padding-bottom: 15px;    
+    font-family: var(--font3);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    font-family: var(--font3);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+section.normal{
+    background-color: white;
+}
+
+section.imagem {
+   color: white;
+    background-color: gray;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-attachment: fixed;
+}
+section#img01 {
+background-image: url('../imagens/background001.jpg');
+background-position: right center;
+background-size: cover;
+}
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+section.imagem > p {
+    padding: 5px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.42);
+    text-shadow: 1px 1px 0px black;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: var(--font2);
+}
